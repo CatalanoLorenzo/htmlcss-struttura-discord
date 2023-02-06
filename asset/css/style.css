@@ -15,10 +15,11 @@
     border: 1px solid black;
 }
 .debug section{
-    height: 800px;
+    height: 600px;
 }
-.debug .card_frist{
+.debug .card,.card_fourh{
     background-color: red;
+    height: 500px;
 }
 .debug .img{
     background-color: rgb(232, 150, 127);
@@ -39,14 +40,19 @@ nav{
     margin: 0 200px;
     padding: 1rem 0;
     justify-content: space-between;
+    font-size: 22px;
 }
+
 .download_banner{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .download_banner section{
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40%;
 }
 .download_banner h1{
@@ -95,7 +101,6 @@ nav{
     padding: 80px 200px;
 }
 .card{
-    width: 100%;
     display: flex;
 }
 .section_frist .img{
@@ -144,8 +149,8 @@ nav{
     padding: 80px 200px;
 }
 .card_fourh{
-    width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .section_fourh .img{
@@ -174,23 +179,39 @@ footer{
     border-bottom: 1px solid #7289da;
     display: flex;
 }
+.footer_top ul{
+    list-style-type: none;
+
+}
 .principal{
     width: calc((100/12) * 2);
+}
+.principal h4{
+    color: #7289da;
 }
 .product{
     width: calc((100/12) * 1);
     display: flexbox;
     flex-direction: column;  
 }
-.product:first-child{
+.product li:first-child a{
     color: #7289da;
 }
 .company{
     width: calc((100/12) * 1)
 }
+.company li:first-child a{
+    color: #7289da;
+}
 .resources{
     width: calc((100/12) * 1)
 }
+.resources li:first-child a{
+    color: #7289da;
+}
 .norms{
     width: calc((100/12) * 1)
+}
+.norms li:first-child a{
+    color: #7289da;
 }
