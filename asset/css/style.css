@@ -14,9 +14,6 @@
     background-color: #3161e0;
     border: 1px solid black;
 }
-.debug .download_banner{
-    height: 600px;
-}
 .debug section{
     height: 800px;
 }
@@ -29,7 +26,14 @@
 .debug .area_text{
     background-color: rgb(114, 61, 61);
 }
+.debug .principal,.product,.company,.resources,.norms{
+    background-color: #646668;
+}
 /* header */
+header{
+    display: flex;
+    flex-direction: column;
+}
 nav{
     display: flex;
     margin: 0 200px;
@@ -162,3 +166,31 @@ nav{
     padding: 15px 30px;
 }
     /* footer */
+footer{
+    background-color: #23272a;
+}
+/* footer top */
+.footer_top{
+    border-bottom: 1px solid #7289da;
+    display: flex;
+}
+.principal{
+    width: calc((100/12) * 2);
+}
+.product{
+    width: calc((100/12) * 1);
+    display: flexbox;
+    flex-direction: column;  
+}
+.product:first-child{
+    color: #7289da;
+}
+.company{
+    width: calc((100/12) * 1)
+}
+.resources{
+    width: calc((100/12) * 1)
+}
+.norms{
+    width: calc((100/12) * 1)
+}
