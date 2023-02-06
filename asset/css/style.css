@@ -29,6 +29,7 @@ nav{
 }
 .download_banner section{
     padding: 1rem 0;
+    width: 40%;
 }
 .download_banner h1{
     font-size: 50px;
