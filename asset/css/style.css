@@ -82,7 +82,10 @@ nav{
     width: 45%;
     
 }
-.area_text h3,p{
+.area_text h3{
+    color: #23272a;
+}
+.area_text p{
     color: #23272a;
 }
 .area_text h3{
@@ -179,42 +182,65 @@ footer{
     border-bottom: 1px solid #7289da;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+
 }
 .footer_top ul{
     list-style-type: none;
 
 }
 .principal{
-    width: calc((100/12) * 4);
+    width: calc((100% / 12) * 4);
+    padding: 5rem;
 }
 .principal h4{
     color: #7289da;
+    font-size: 30px;
+    padding-bottom: 1rem;
 }
 .product{
-    width: calc((100/12) * 2);
+    width: calc((100% / 12) * 2);
     display: flexbox;
     flex-direction: column;  
+    padding: 5rem;
 }
 .product li:first-child a{
     color: #7289da;
 }
+.product li{
+    padding-bottom: 1rem;
+}
 .company{
-    width: calc((100/12) * 2)
+    width: calc((100% / 12) * 2);
+    padding: 5rem;
 }
 .company li:first-child a{
     color: #7289da;
 }
+.company li{
+    padding-bottom: 1rem;
+}
 .resources{
-    width: calc((100/12) * 2)
+    width: calc((100% /12) * 2);
+    padding: 5rem;
 }
 .resources li:first-child a{
     color: #7289da;
 }
+.resources li{
+    padding-bottom: 1rem;
+}
 .norms{
-    width: calc((100/12) * 2)
+    width: calc((100% / 12) * 2);
+    padding: 5rem;
 }
 .norms li:first-child a{
     color: #7289da;
+
+}
+.norms li{
+    padding-bottom: 1rem;
 }
 /* footer bottom */
 .footer_bottom{
