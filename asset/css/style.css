@@ -163,7 +163,7 @@ nav{
     color: black;
     font-size: 30px
 }
-.download_windows{
+.download_windows,.singin_button{
     background-color: #7289da;
     border: 0;
     border-radius: 30px;
@@ -178,19 +178,20 @@ footer{
 .footer_top{
     border-bottom: 1px solid #7289da;
     display: flex;
+    justify-content: space-around;
 }
 .footer_top ul{
     list-style-type: none;
 
 }
 .principal{
-    width: calc((100/12) * 2);
+    width: calc((100/12) * 4);
 }
 .principal h4{
     color: #7289da;
 }
 .product{
-    width: calc((100/12) * 1);
+    width: calc((100/12) * 2);
     display: flexbox;
     flex-direction: column;  
 }
@@ -198,20 +199,26 @@ footer{
     color: #7289da;
 }
 .company{
-    width: calc((100/12) * 1)
+    width: calc((100/12) * 2)
 }
 .company li:first-child a{
     color: #7289da;
 }
 .resources{
-    width: calc((100/12) * 1)
+    width: calc((100/12) * 2)
 }
 .resources li:first-child a{
     color: #7289da;
 }
 .norms{
-    width: calc((100/12) * 1)
+    width: calc((100/12) * 2)
 }
 .norms li:first-child a{
     color: #7289da;
+}
+/* footer bottom */
+.footer_bottom{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
 }
