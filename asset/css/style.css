@@ -17,7 +17,11 @@
 .debug section{
     height: 600px;
 }
-.debug .card,.card_fourh{
+.debug .card{
+    background-color: red;
+    height: 500px;
+}
+.debug .card_fourh{
     background-color: red;
     height: 500px;
 }
@@ -49,6 +53,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 }
 .download_banner section{
     display: flex;
@@ -192,7 +197,7 @@ footer{
     border-bottom: 1px solid #7289da;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     padding: 3rem;
 
 }
