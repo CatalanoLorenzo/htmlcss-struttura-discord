@@ -31,9 +31,6 @@
 .debug .area_text{
     background-color: rgb(114, 61, 61);
 }
-.debug .principal,.product,.company,.resources,.norms{
-    background-color: #646668;
-}
 /* header */
 header{
     display: flex;
@@ -198,7 +195,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    padding: 3rem;
+    margin: 0 3rem;
 
 }
 .footer_top ul{
