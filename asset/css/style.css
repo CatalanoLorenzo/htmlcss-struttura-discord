@@ -5,6 +5,7 @@
     box-sizing: border-box;
     color: white;
     text-decoration: none;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 
 }
 /* debug */
@@ -16,10 +17,23 @@
 .debug .download_banner{
     height: 600px;
 }
+.debug section{
+    height: 800px;
+}
+.debug .card_frist{
+    background-color: red;
+}
+.debug .img{
+    background-color: rgb(232, 150, 127);
+}
+.debug .area_text{
+    background-color: rgb(114, 61, 61);
+}
 /* header */
 nav{
     display: flex;
-    padding: 1rem 20%;
+    margin: 0 200px;
+    padding: 1rem 0;
     justify-content: space-between;
 }
 .download_banner{
@@ -51,5 +65,100 @@ nav{
     background-color: #23272a;
 }
 /* main */
-
-/* footer */
+.img{
+    width: 55%;
+}
+.area_text{
+    width: 45%;
+    
+}
+.area_text h3,p{
+    color: #23272a;
+}
+.area_text h3{
+    font-size: 50px;   
+}
+.area_text p{
+    font-size: 20px;
+}
+/* section frist */
+.section_frist{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+}
+.card{
+    width: 100%;
+    display: flex;
+}
+.section_frist .img{
+    order: 1;
+}
+.section_frist .area_text{
+    order: 2;
+}
+/* section second */
+.section_second{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+}
+.section_second .img{
+    order: 2;
+}
+.section_second .area_text{
+    order: 1;
+}
+/* third section */
+.section_third{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+}
+.section_third .img{
+    order: 1;
+}
+.section_third .area_text{
+    order: 2;
+}
+/* fourh section */
+.section_fourh{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+}
+.card_fourh{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section_fourh .img{
+    order: 1;
+}
+.section_fourh .area_text{
+    order: 2;
+}
+.section_fourh h4{
+    color: black;
+    font-size: 30px
+}
+.download_windows{
+    background-color: #7289da;
+    border: 0;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 15px 30px;
+}
+    /* footer */
