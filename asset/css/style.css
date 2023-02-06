@@ -1,0 +1,33 @@
+/* utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+
+}
+/* debug */
+.debug header{
+    height: 650px;
+    background-color: #3161e0;
+    border: 1px solid black;
+}
+/* header */
+nav{
+    display: flex;
+    padding: 1rem 20%0px;
+    justify-content: space-between;
+}
+.logo{
+
+}
+.menu{
+
+}
+.login{
+
+}
+/* main */
+
+/* footer */
