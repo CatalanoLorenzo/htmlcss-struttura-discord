@@ -75,11 +75,18 @@ nav{
     background-color: #23272a;
 }
 /* main */
+.card{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .img{
-    width: 55%;
+    width: calc((100% / 12) * 8);
+    padding: 1rem;
 }
 .area_text{
-    width: 45%;
+    width: calc((100% / 12) * 7);
+    padding: 1rem;
     
 }
 .area_text h3{
@@ -96,15 +103,13 @@ nav{
 }
 /* section frist */
 .section_frist{
+    width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 80px 200px;
-}
-.card{
-    display: flex;
 }
 .section_frist .img{
     order: 1;
@@ -115,6 +120,7 @@ nav{
 /* section second */
 .section_second{
     background-color: #f6f6f6;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,6 +136,7 @@ nav{
 /* third section */
 .section_third{
     background-color: white;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,6 +152,7 @@ nav{
 /* fourh section */
 .section_fourh{
     background-color: #f6f6f6;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
