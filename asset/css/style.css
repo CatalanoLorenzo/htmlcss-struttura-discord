@@ -6,12 +6,21 @@
     color: white;
     text-decoration: none;
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-
+}
+.dflex{
+    display: flex;
+}
+/* colors */
+:root{
+--cd-bkfooter: #3161e0;
+--cd-dwbutt: #646668;
+--cd-opbutt: #23272a;
+--cd-fkwhite: #f6f6f6;
+--cd-logo: #7289da;
 }
 /* debug */
 .debug header{
     height: 700px;
-    background-color: #3161e0;
     border: 1px solid black;
 }
 .debug section{
@@ -33,13 +42,11 @@
 }
 /* header */
 header{
-    display: flex;
     flex-direction: column;
-    background-color: #3161e0;
+    background-color: var(--cd-bkfooter)
 
 }
 nav{
-    display: flex;
     margin: 0 200px;
     padding: 1rem 0;
     justify-content: space-between;
@@ -47,13 +54,11 @@ nav{
 }
 
 .download_banner{
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
 }
 .download_banner section{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -76,15 +81,20 @@ nav{
 }
 .download_button{
     background-color: #ffffff;
-    color: #646668;
+    color: var(--cd-dwbutt)
 }
 .open_button{
-    background-color: #23272a;
+    background-color: var(--cd-opbutt)
 }
 /* main */
+main section{
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 200px;
+    align-items: center;
+}
 .card{
     width: 100%;
-    display: flex;
     justify-content: center;
 }
 .img{
@@ -97,10 +107,10 @@ nav{
     
 }
 .area_text h3{
-    color: #23272a;
+    color: var(--cd-opbutt)
 }
 .area_text p{
-    color: #23272a;
+    color: var(--cd-opbutt)
 }
 .area_text h3{
     font-size: 50px;   
@@ -109,77 +119,47 @@ nav{
     font-size: 20px;
 }
 /* section frist */
-.section_frist{
+section .frist{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 200px;
 }
-.section_frist .img{
-    order: 1;
+.frist .img{
+    order: -1;
 }
-.section_frist .area_text{
-    order: 2;
+.frist .area_text{
 }
 /* section second */
-.section_second{
-    background-color: #f6f6f6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 200px;
+section .second{
+    background-color: var(--cd-fkwhite)
 }
-.section_second .img{
-    order: 2;
-}
-.section_second .area_text{
+.second .img{
     order: 1;
+}
 }
 /* third section */
-.section_third{
+section .third{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 200px;
 }
-.section_third .img{
-    order: 1;
-}
-.section_third .area_text{
-    order: 2;
+.third .img{
+    order: -1;
 }
 /* fourh section */
-.section_fourh{
-    background-color: #f6f6f6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 200px;
+section .fourh{
+    background-color: var(--cd-fkwhite)
 }
 .card_fourh{
     width: 100%;
-    display: flex;
     align-items: center;
     flex-direction: column;
 }
-.section_fourh .img{
-    order: 1;
+.fourh .img{
+    order: -1;
 }
-.section_fourh .area_text{
-    order: 2;
-}
-.section_fourh h4{
+.fourh h4{
     color: black;
     font-size: 30px
 }
 .download_windows,.singin_button{
-    background-color: #7289da;
+    background-color: var(--cd-logo);
     border: 0;
     border-radius: 30px;
     font-size: 20px;
@@ -187,11 +167,11 @@ nav{
 }
     /* footer */
 footer{
-    background-color: #23272a;
+    background-color: var(--cd-opbutt)
 }
 /* footer top */
 .footer_top{
-    border-bottom: 1px solid #7289da;
+    border-bottom: 1px solid var(--cd-logo)
     display: flex;
     justify-content: space-around;
     align-items: baseline;
@@ -213,12 +193,11 @@ footer{
 }
 .product{
     width: calc((100% / 12) * 2);
-    display: flexbox;
     flex-direction: column;  
     padding: 5rem;
 }
 .product li:first-child a{
-    color: #7289da;
+    color: var(--cd-logo)
 }
 .product li{
     padding-bottom: 1rem;
@@ -228,7 +207,7 @@ footer{
     padding: 5rem;
 }
 .company li:first-child a{
-    color: #7289da;
+    color: var(--cd-logo)
 }
 .company li{
     padding-bottom: 1rem;
@@ -238,7 +217,7 @@ footer{
     padding: 5rem;
 }
 .resources li:first-child a{
-    color: #7289da;
+    color: var(--cd-logo)
 }
 .resources li{
     padding-bottom: 1rem;
@@ -248,7 +227,7 @@ footer{
     padding: 5rem;
 }
 .norms li:first-child a{
-    color: #7289da;
+    color: var(--cd-logo)
 
 }
 .norms li{
@@ -257,6 +236,5 @@ footer{
 /* footer bottom */
 .footer_bottom{
     padding: 2rem 0;
-    display: flex;
     justify-content: space-between;
 }
